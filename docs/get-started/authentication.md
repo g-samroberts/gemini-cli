@@ -64,7 +64,7 @@ logging in with your Google account.
 #### (Optional) Set your Google Cloud Project
 
 > **Note:** In most cases, you don't need to set a Google Cloud project when 
-> authenticating as an individual.
+> authenticating with an individual Google account.
 
 When you log in using a Google account, you may be prompted to select a
 `GOOGLE_CLOUD_PROJECT`.

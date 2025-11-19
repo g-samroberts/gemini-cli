@@ -14,15 +14,15 @@ topics on:
   Standard edition subscription to use this service. Please contact your
   administrator to request an entitlement to Gemini Code Assist Standard
   edition.`**
-  - **Cause:** This error typically occurs when an individual user of Gemini
-    Code Assist (not part of an organization's subscription) has the
-    `GOOGLE_CLOUD_PROJECT` or `GOOGLE_CLOUD_PROJECT_ID` environment variable
-    set. Gemini CLI attempts to use the Google Cloud project, which then triggers
-    an organizational subscription check.
-  - **Solution:** If you are an individual user, unset the
-    `GOOGLE_CLOUD_PROJECT` or `GOOGLE_CLOUD_PROJECT_ID` environment variable
-    with `unset GOOGLE_CLOUD_PROJECT`. If you've added them to a `.env` file,
-    then delete the variables.
+  - **Cause:** This error typically occurs when someone with an individual
+    Google account (most accounts ending in `@gmail.com` and not part of an
+    organization's subscription) has the `GOOGLE_CLOUD_PROJECT` or
+    `GOOGLE_CLOUD_PROJECT_ID` environment variable set. Gemini CLI attempts to
+    use the Google Cloud project, which then triggers an organizational
+    subscription check.
+  - **Solution:** If you have an individual Google account, unset the
+    `GOOGLE_CLOUD_PROJECT` or `GOOGLE_CLOUD_PROJECT_ID` environment variable.
+    If you've added them to a `.env` file, then delete the variables.
 - **Error: `Failed to login. Message: Request contains an invalid argument`**
   - Users with Google Workspace accounts or Google Cloud accounts associated
     with their Gmail accounts may not be able to activate the free tier of the
